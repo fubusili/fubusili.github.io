@@ -8,14 +8,17 @@
   <link rel="dns-prefetch" href="https://fubusili.github.io">
   <title>如何快速搭建一款app | Clark的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="keywords" content="app">
+  <meta name="description" content="如何快速搭建app，这是app开发者一直都在思考的问题。但是其实我们已经有基本的共识，那就是使用第三方库（如果公司或者个人对代码要求不高的话，话说就算是大公司，也是把平时经常用到的代码封装常用库，然后之后的app直接拿来用）。现在的第三方库，俗话说的轮子，一搜一大堆，所以说快速搭建一款app不是问题，下面我们一起来看看，快速搭建一款app，需要用到的常用第三方库（针对Objective-C）。 数">
+<meta name="keywords" content="app">
 <meta property="og:type" content="article">
 <meta property="og:title" content="如何快速搭建一款app">
 <meta property="og:url" content="https://fubusili.github.io/2017/07/24/如何快速搭建一款app/index.html">
 <meta property="og:site_name" content="Clark的博客">
-<meta property="og:updated_time" content="2017-07-24T04:11:16.000Z">
+<meta property="og:description" content="如何快速搭建app，这是app开发者一直都在思考的问题。但是其实我们已经有基本的共识，那就是使用第三方库（如果公司或者个人对代码要求不高的话，话说就算是大公司，也是把平时经常用到的代码封装常用库，然后之后的app直接拿来用）。现在的第三方库，俗话说的轮子，一搜一大堆，所以说快速搭建一款app不是问题，下面我们一起来看看，快速搭建一款app，需要用到的常用第三方库（针对Objective-C）。 数">
+<meta property="og:updated_time" content="2017-07-24T08:34:02.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="如何快速搭建一款app">
+<meta name="twitter:description" content="如何快速搭建app，这是app开发者一直都在思考的问题。但是其实我们已经有基本的共识，那就是使用第三方库（如果公司或者个人对代码要求不高的话，话说就算是大公司，也是把平时经常用到的代码封装常用库，然后之后的app直接拿来用）。现在的第三方库，俗话说的轮子，一搜一大堆，所以说快速搭建一款app不是问题，下面我们一起来看看，快速搭建一款app，需要用到的常用第三方库（针对Objective-C）。 数">
   
     <link rel="alternative" href="/atom.xml" title="Clark的博客" type="application/atom+xml">
   
@@ -169,7 +172,38 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        
+        <p>如何快速搭建app，这是app开发者一直都在思考的问题。但是其实我们已经有基本的共识，那就是使用第三方库（如果公司或者个人对代码要求不高的话，话说就算是大公司，也是把平时经常用到的代码封装常用库，然后之后的app直接拿来用）。现在的第三方库，俗话说的轮子，一搜一大堆，所以说快速搭建一款app不是问题，下面我们一起来看看，快速搭建一款app，需要用到的常用第三方库（针对Objective-C）。</p>
+<h2 id="数据请求"><a href="#数据请求" class="headerlink" title="数据请求"></a>数据请求</h2><h3 id="AFNetworking"><a href="#AFNetworking" class="headerlink" title="AFNetworking"></a>AFNetworking</h3><p>数据请求毫无疑问是绝大多数app需要用到的，封装好的的数据请求第三方库最出名也是最多app用到的非AFNetworking莫属，所以如果你要用到数据请求，首推 AFNetworking 。</p>
+<p>More info: <a href="https://github.com/AFNetworking/AFNetworking" target="_blank" rel="external">AFNetworking</a></p>
+<h3 id="Reachibility"><a href="#Reachibility" class="headerlink" title="Reachibility"></a>Reachibility</h3><p>数据请求过程中无法回避的一个问题是：网络判断，而 Reachibility 就是一个好用的网络状态和网络类型判断库。事实上AFNetworking也有网络判断方法。</p>
+<p>More info: <a href="https://github.com/tonymillion/Reachability" target="_blank" rel="external">Reachibility</a></p>
+<h2 id="数据解析"><a href="#数据解析" class="headerlink" title="数据解析"></a>数据解析</h2><p>app大多数是承载一个信息展示的终端，而信息的来源大多数时候在服务器端，而app拿到信息数据到显示的时候都是需要解析的（没有经过解析的大多数是显示不了或者显示出来会乱码）。</p>
+<h3 id="YYModel"><a href="#YYModel" class="headerlink" title="YYModel"></a>YYModel</h3><p>YYModel 号称高性能的一款数据解析库，当然还有其他的优秀的数据解析第三方库，我们这里只推荐一款，达到快速搭建app就行。</p>
+<p>More info: <a href="https://github.com/ibireme/YYModel" target="_blank" rel="external">YYModel</a></p>
+<h2 id="数据缓存"><a href="#数据缓存" class="headerlink" title="数据缓存"></a>数据缓存</h2><h3 id="PINCahe"><a href="#PINCahe" class="headerlink" title="PINCahe"></a>PINCahe</h3><p>PINCache是一个内存缓存和硬盘缓存都满足需要的第三方库，如果你只是存储小的数据，那么推荐PINCache。</p>
+<p>More info: <a href="https://github.com/pinterest/PINCache" target="_blank" rel="external">PINCache</a></p>
+<h3 id="SDWebImage"><a href="#SDWebImage" class="headerlink" title="SDWebImage"></a>SDWebImage</h3><p>图片缓存第三方库可以使用SDWebImage, 这可库用的最多的时候就是设置 UIBubtton 或者 UIImageView 图片。</p>
+<p>More info: <a href="https://github.com/rs/SDWebImage" target="_blank" rel="external">SDWebImage</a></p>
+<h3 id="FMDB"><a href="#FMDB" class="headerlink" title="FMDB"></a>FMDB</h3><p>FMDB 是数据库使用，适合存储大数据。</p>
+<p>More info: <a href="https://github.com/ccgus/fmdb" target="_blank" rel="external">FMDB</a></p>
+<h2 id="UI显示"><a href="#UI显示" class="headerlink" title="UI显示"></a>UI显示</h2><h3 id="自动布局Masonry"><a href="#自动布局Masonry" class="headerlink" title="自动布局Masonry"></a>自动布局Masonry</h3><p>官方自带的纯代码自动布局不是很友好，于是诞生了很多封装了官方自动布局的代码的第三方库，Masonry就是其中比较优秀的。</p>
+<p>More info: <a href="https://github.com/SnapKit/Masonry" target="_blank" rel="external">Masonry</a></p>
+<h3 id="下拉刷新SVPullToRefresh"><a href="#下拉刷新SVPullToRefresh" class="headerlink" title="下拉刷新SVPullToRefresh"></a>下拉刷新SVPullToRefresh</h3><p>下拉刷新也是app常见的需求，如果没有什么特殊需求可以使用 SVPullToRefresh 。</p>
+<p>More info: <a href="https://github.com/samvermette/SVPullToRefresh" target="_blank" rel="external">SVPullToRefresh</a></p>
+<h3 id="菊花SVProgressHUD"><a href="#菊花SVProgressHUD" class="headerlink" title="菊花SVProgressHUD"></a>菊花SVProgressHUD</h3><p>数据请求，等待UI刷新，信息提示操作用到到控件推荐使用SVProgressHUD，比较好用的一款提示框第三方库。</p>
+<p>More info: <a href="https://github.com/SVProgressHUD/SVProgressHUD" target="_blank" rel="external">SVProgressHUD</a></p>
+<h3 id="空数据列表提示DZNEmptyDataSet"><a href="#空数据列表提示DZNEmptyDataSet" class="headerlink" title="空数据列表提示DZNEmptyDataSet"></a>空数据列表提示DZNEmptyDataSet</h3><p>UITableView 是app开发中非常常见、经常用到的控件，很多时候拿不到显示到UITableView上的时候，需要要求显示空数据的提示给用户（点击可以再次请求数据），那么DZNEmptyDataSet就是在这样的情况下产生的一款非常好用的库（同样适用UIScrollView和UICollectionView）。</p>
+<p>More info: <a href="https://github.com/dzenbot/DZNEmptyDataSet" target="_blank" rel="external">DZNEmptyDataSet</a></p>
+<h3 id="高度自适应UITableView-FDTemplateLayoutCell"><a href="#高度自适应UITableView-FDTemplateLayoutCell" class="headerlink" title="高度自适应UITableView-FDTemplateLayoutCell"></a>高度自适应UITableView-FDTemplateLayoutCell</h3><p>UITableViewCell 高度自适应也是我们经常遇到的一个问题，UITableView-FDTemplateLayoutCell 简单粗暴的适用就可以满足你的需求。</p>
+<h3 id="无限循环SDCycleScrollView"><a href="#无限循环SDCycleScrollView" class="headerlink" title="无限循环SDCycleScrollView"></a>无限循环SDCycleScrollView</h3><p>app经常有这种无限循环显示的广告视图的需求，那么如果如果你要做这种效果的的话，SDCycleScrollView可以满足你的需求</p>
+<p>More info: <a href="https://github.com/gsdios/SDCycleScrollView" target="_blank" rel="external">SDCycleScrollView</a></p>
+<h3 id="键盘管理IQKeyboardManager"><a href="#键盘管理IQKeyboardManager" class="headerlink" title="键盘管理IQKeyboardManager"></a>键盘管理IQKeyboardManager</h3><p>经常会有些输入框，当点击编辑的时候却被弹出的键盘给挡住了，烦不烦？不用担心IQKeyboardManager可以轻松简单的解决你的问题，升职简单的主要一句代码就行，惊不惊喜！</p>
+<p>More info: <a href="https://github.com/hackiftekhar/IQKeyboardManager" target="_blank" rel="external">IQKeyboardManager</a></p>
+<h3 id="滑动导航栏WMPageController"><a href="#滑动导航栏WMPageController" class="headerlink" title="滑动导航栏WMPageController"></a>滑动导航栏WMPageController</h3><p>主流的新闻浏览器比如网易、腾讯等都使用了滑动导航栏形式去让用户简单的滑动获取每个分类下的新闻，如果你也有类似的需求，WMPageController可以做到。</p>
+<p>More info: <a href="https://github.com/wangmchn/WMPageController" target="_blank" rel="external">WMPageController</a></p>
+<h2 id="测试Specta"><a href="#测试Specta" class="headerlink" title="测试Specta"></a>测试Specta</h2><p>理论上写代码是需要测试的，最好一个模块一个模块测试你的代码是否符合预期，俗称单元。那么请用Specta。</p>
+<h2 id="Demo"><a href="#Demo" class="headerlink" title="Demo"></a>Demo</h2><p>ok, 以上推荐的第三方库基本可以满足大多数的app的需求，并且可以快速构建出一款app。创建一个app，使用cocoapods导入这些第三方库，然后查看这些库的简单使用，就可以轻松快速的构建一款app出来。</p>
+
       
 
       
@@ -402,11 +436,11 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
           <ul class="article-tag-list" q-show="showTags">
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">app</a>
+                <a href="javascript:void(0)" class="js-tag color3">随笔</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">随笔</a>
+                <a href="javascript:void(0)" class="js-tag color4">app</a>
               </li>
             
             <div class="clearfix"></div>
