@@ -15,7 +15,7 @@
 <meta property="og:url" content="https://fubusili.github.io/2017/07/24/如何快速搭建一款app/index.html">
 <meta property="og:site_name" content="Clark的博客">
 <meta property="og:description" content="如何快速搭建app，这是app开发者一直都在思考的问题。但是其实我们已经有基本的共识，那就是使用第三方库（如果公司或者个人对代码要求不高的话，话说就算是大公司，也是把平时经常用到的代码封装常用库，然后之后的app直接拿来用）。现在的第三方库，俗话说的轮子，一搜一大堆，所以说快速搭建一款app不是问题，下面我们一起来看看，快速搭建一款app，需要用到的常用第三方库（针对Objective-C）。 数">
-<meta property="og:updated_time" content="2017-07-25T07:00:43.000Z">
+<meta property="og:updated_time" content="2017-07-25T07:28:12.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="如何快速搭建一款app">
 <meta name="twitter:description" content="如何快速搭建app，这是app开发者一直都在思考的问题。但是其实我们已经有基本的共识，那就是使用第三方库（如果公司或者个人对代码要求不高的话，话说就算是大公司，也是把平时经常用到的代码封装常用库，然后之后的app直接拿来用）。现在的第三方库，俗话说的轮子，一搜一大堆，所以说快速搭建一款app不是问题，下面我们一起来看看，快速搭建一款app，需要用到的常用第三方库（针对Objective-C）。 数">
@@ -175,8 +175,8 @@
         <p>如何快速搭建app，这是app开发者一直都在思考的问题。但是其实我们已经有基本的共识，那就是使用第三方库（如果公司或者个人对代码要求不高的话，话说就算是大公司，也是把平时经常用到的代码封装常用库，然后之后的app直接拿来用）。现在的第三方库，俗话说的轮子，一搜一大堆，所以说快速搭建一款app不是问题，下面我们一起来看看，快速搭建一款app，需要用到的常用第三方库（针对Objective-C）。</p>
 <h2 id="数据请求"><a href="#数据请求" class="headerlink" title="数据请求"></a>数据请求</h2><h3 id="AFNetworking"><a href="#AFNetworking" class="headerlink" title="AFNetworking"></a>AFNetworking</h3><p>数据请求毫无疑问是绝大多数app需要用到的，封装好的的数据请求第三方库最出名也是最多app用到的非AFNetworking莫属，所以如果你要用到数据请求，首推 AFNetworking 。</p>
 <p>More info: <a href="https://github.com/AFNetworking/AFNetworking" target="_blank" rel="external">AFNetworking</a></p>
-<h3 id="Reachibility"><a href="#Reachibility" class="headerlink" title="Reachibility"></a>Reachibility</h3><p>数据请求过程中无法回避的一个问题是：网络判断，而 Reachibility 就是一个好用的网络状态和网络类型判断库。事实上AFNetworking也有网络判断方法。</p>
-<p>More info: <a href="https://github.com/tonymillion/Reachability" target="_blank" rel="external">Reachibility</a></p>
+<h3 id="Reachability"><a href="#Reachability" class="headerlink" title="Reachability"></a>Reachability</h3><p>数据请求过程中无法回避的一个问题是：网络判断，而 Reachibility 就是一个好用的网络状态和网络类型判断库。事实上AFNetworking也有网络判断方法。</p>
+<p>More info: <a href="https://github.com/tonymillion/Reachability" target="_blank" rel="external">Reachability</a></p>
 <h2 id="数据解析"><a href="#数据解析" class="headerlink" title="数据解析"></a>数据解析</h2><p>app大多数是承载一个信息展示的终端，而信息的来源大多数时候在服务器端，而app拿到信息数据到显示的时候都是需要解析的（没有经过解析的大多数是显示不了或者显示出来会乱码）。</p>
 <h3 id="YYModel"><a href="#YYModel" class="headerlink" title="YYModel"></a>YYModel</h3><p>YYModel 号称高性能的一款数据解析库，当然还有其他的优秀的数据解析第三方库，我们这里只推荐一款，达到快速搭建app就行。</p>
 <p>More info: <a href="https://github.com/ibireme/YYModel" target="_blank" rel="external">YYModel</a></p>
